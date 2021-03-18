@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductionYearValidationRule</fullName>
+    <active>true</active>
+    <errorConditionFormula>Production_Year__c &gt; YEAR(TODAY()) &amp;&amp; Production_Year__c &lt; 2000</errorConditionFormula>
+    <errorDisplayField>Production_Year__c</errorDisplayField>
+    <errorMessage>The car&apos;s production year must be between 2000 and the current one.</errorMessage>
+</ValidationRule>

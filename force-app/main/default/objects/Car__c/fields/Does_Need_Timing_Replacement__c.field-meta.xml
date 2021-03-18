@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Does_Need_Timing_Replacement__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Mileage__c -  Mileage_When_Last_Timing_Replacement__c &gt; 120000, &apos;ZDECYDOWANIE TAK&apos;, 
+	IF(Mileage__c -  Mileage_When_Last_Timing_Replacement__c &gt; 85000, &apos;TAK&apos;, &apos;NIE&apos;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Does Need Timing Replacement</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
