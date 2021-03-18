@@ -1,0 +1,302 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 3,
+    "passing": 0,
+    "failing": 3,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Thu Mar 18 2021 12:02:44 PM",
+    "testExecutionTimeInMs": 628,
+    "testTotalTimeInMs": 628,
+    "commandTimeInMs": 512,
+    "hostname": "https://resilient-impala-d41kwo-dev-ed.my.salesforce.com",
+    "orgId": "00D09000007SYyxEAG",
+    "username": "adam.klimczak95@resilient-impala-d41kwo.com",
+    "testRunId": "707090000095VA3",
+    "userId": "00509000004GGuxAAG",
+    "totalLines": 19,
+    "coveredLines": 18,
+    "testRunCoverage": "95%",
+    "orgWideCoverage": "88%"
+  },
+  "tests": [
+    {
+      "id": "07M09000001DjP6EAK",
+      "queueItemId": "70909000000HXjoAAG",
+      "stackTrace": "Class.CarUpdateBatchTests.shouldUpdateStatusToNeedRepair: line 39, column 1",
+      "message": "System.AssertException: Assertion Failed: Expected: 10, Actual: 0",
+      "asyncApexJobId": "707090000095VA3AAM",
+      "methodName": "shouldUpdateStatusToNeedRepair",
+      "outcome": "Fail",
+      "apexLogId": "07L09000001u48JEAQ",
+      "apexClass": {
+        "id": "01p0900000CcW9TAAV",
+        "name": "CarUpdateBatchTests",
+        "namespacePrefix": null,
+        "fullName": "CarUpdateBatchTests"
+      },
+      "runTime": 237,
+      "testTimestamp": "2021-03-18T11:02:44.000+0000",
+      "fullName": "CarUpdateBatchTests.shouldUpdateStatusToNeedRepair",
+      "diagnostic": {
+        "exceptionMessage": "System.AssertException: Assertion Failed: Expected: 10, Actual: 0",
+        "exceptionStackTrace": "Class.CarUpdateBatchTests.shouldUpdateStatusToNeedRepair: line 39, column 1",
+        "className": "CarUpdateBatchTests",
+        "compileProblem": "",
+        "lineNumber": 39,
+        "columnNumber": 1
+      },
+      "perClassCoverage": [
+        {
+          "apexClassOrTriggerName": "CarUpdateBatch",
+          "apexClassOrTriggerId": "01p0900000CcW99AAF",
+          "apexTestClassId": "01p0900000CcW9TAAV",
+          "apexTestMethodName": "shouldUpdateStatusToNeedRepair",
+          "numLinesCovered": 15,
+          "numLinesUncovered": 1,
+          "percentage": "94%",
+          "coverage": {
+            "coveredLines": [
+              3,
+              4,
+              8,
+              9,
+              11,
+              12,
+              13,
+              15,
+              16,
+              18,
+              21,
+              22,
+              25,
+              27,
+              30
+            ],
+            "uncoveredLines": [
+              19
+            ]
+          }
+        },
+        {
+          "apexClassOrTriggerName": "CarTrigger",
+          "apexClassOrTriggerId": "01q09000000DFzHAAW",
+          "apexTestClassId": "01p0900000CcW9TAAV",
+          "apexTestMethodName": "shouldUpdateStatusToNeedRepair",
+          "numLinesCovered": 3,
+          "numLinesUncovered": 0,
+          "percentage": "100%",
+          "coverage": {
+            "coveredLines": [
+              3,
+              4,
+              5
+            ],
+            "uncoveredLines": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "07M09000001DjP7EAK",
+      "queueItemId": "70909000000HXjoAAG",
+      "stackTrace": "Class.CarUpdateBatchTests.shouldUpdateStatusToNeedReview: line 31, column 1",
+      "message": "System.AssertException: Assertion Failed: Expected: 10, Actual: 5",
+      "asyncApexJobId": "707090000095VA3AAM",
+      "methodName": "shouldUpdateStatusToNeedReview",
+      "outcome": "Fail",
+      "apexLogId": "07L09000001u48JEAQ",
+      "apexClass": {
+        "id": "01p0900000CcW9TAAV",
+        "name": "CarUpdateBatchTests",
+        "namespacePrefix": null,
+        "fullName": "CarUpdateBatchTests"
+      },
+      "runTime": 204,
+      "testTimestamp": "2021-03-18T11:02:44.000+0000",
+      "fullName": "CarUpdateBatchTests.shouldUpdateStatusToNeedReview",
+      "diagnostic": {
+        "exceptionMessage": "System.AssertException: Assertion Failed: Expected: 10, Actual: 5",
+        "exceptionStackTrace": "Class.CarUpdateBatchTests.shouldUpdateStatusToNeedReview: line 31, column 1",
+        "className": "CarUpdateBatchTests",
+        "compileProblem": "",
+        "lineNumber": 31,
+        "columnNumber": 1
+      },
+      "perClassCoverage": [
+        {
+          "apexClassOrTriggerName": "CarUpdateBatch",
+          "apexClassOrTriggerId": "01p0900000CcW99AAF",
+          "apexTestClassId": "01p0900000CcW9TAAV",
+          "apexTestMethodName": "shouldUpdateStatusToNeedReview",
+          "numLinesCovered": 15,
+          "numLinesUncovered": 1,
+          "percentage": "94%",
+          "coverage": {
+            "coveredLines": [
+              3,
+              4,
+              8,
+              9,
+              11,
+              12,
+              13,
+              15,
+              16,
+              18,
+              21,
+              22,
+              25,
+              27,
+              30
+            ],
+            "uncoveredLines": [
+              19
+            ]
+          }
+        },
+        {
+          "apexClassOrTriggerName": "CarTrigger",
+          "apexClassOrTriggerId": "01q09000000DFzHAAW",
+          "apexTestClassId": "01p0900000CcW9TAAV",
+          "apexTestMethodName": "shouldUpdateStatusToNeedReview",
+          "numLinesCovered": 0,
+          "numLinesUncovered": 3,
+          "percentage": "0%",
+          "coverage": {
+            "coveredLines": [],
+            "uncoveredLines": [
+              3,
+              4,
+              5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "07M09000001DjP8EAK",
+      "queueItemId": "70909000000HXjoAAG",
+      "stackTrace": "Class.CarUpdateBatchTests.shouldUpdateStatusToProbablyDead: line 48, column 1",
+      "message": "System.AssertException: Assertion Failed: Expected: 10, Actual: 5",
+      "asyncApexJobId": "707090000095VA3AAM",
+      "methodName": "shouldUpdateStatusToProbablyDead",
+      "outcome": "Fail",
+      "apexLogId": "07L09000001u48JEAQ",
+      "apexClass": {
+        "id": "01p0900000CcW9TAAV",
+        "name": "CarUpdateBatchTests",
+        "namespacePrefix": null,
+        "fullName": "CarUpdateBatchTests"
+      },
+      "runTime": 187,
+      "testTimestamp": "2021-03-18T11:02:45.000+0000",
+      "fullName": "CarUpdateBatchTests.shouldUpdateStatusToProbablyDead",
+      "diagnostic": {
+        "exceptionMessage": "System.AssertException: Assertion Failed: Expected: 10, Actual: 5",
+        "exceptionStackTrace": "Class.CarUpdateBatchTests.shouldUpdateStatusToProbablyDead: line 48, column 1",
+        "className": "CarUpdateBatchTests",
+        "compileProblem": "",
+        "lineNumber": 48,
+        "columnNumber": 1
+      },
+      "perClassCoverage": [
+        {
+          "apexClassOrTriggerName": "CarUpdateBatch",
+          "apexClassOrTriggerId": "01p0900000CcW99AAF",
+          "apexTestClassId": "01p0900000CcW9TAAV",
+          "apexTestMethodName": "shouldUpdateStatusToProbablyDead",
+          "numLinesCovered": 15,
+          "numLinesUncovered": 1,
+          "percentage": "94%",
+          "coverage": {
+            "coveredLines": [
+              3,
+              4,
+              8,
+              9,
+              11,
+              12,
+              13,
+              15,
+              16,
+              18,
+              21,
+              22,
+              25,
+              27,
+              30
+            ],
+            "uncoveredLines": [
+              19
+            ]
+          }
+        },
+        {
+          "apexClassOrTriggerName": "CarTrigger",
+          "apexClassOrTriggerId": "01q09000000DFzHAAW",
+          "apexTestClassId": "01p0900000CcW9TAAV",
+          "apexTestMethodName": "shouldUpdateStatusToProbablyDead",
+          "numLinesCovered": 0,
+          "numLinesUncovered": 3,
+          "percentage": "0%",
+          "coverage": {
+            "coveredLines": [],
+            "uncoveredLines": [
+              3,
+              4,
+              5
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "codecoverage": [
+    {
+      "apexId": "01p0900000CcW99AAF",
+      "name": "CarUpdateBatch",
+      "type": "ApexClass",
+      "numLinesCovered": 15,
+      "numLinesUncovered": 1,
+      "percentage": "94%",
+      "coveredLines": [
+        3,
+        4,
+        8,
+        9,
+        11,
+        12,
+        13,
+        15,
+        16,
+        18,
+        21,
+        22,
+        25,
+        27,
+        30
+      ],
+      "uncoveredLines": [
+        19
+      ]
+    },
+    {
+      "apexId": "01q09000000DFzHAAW",
+      "name": "CarTrigger",
+      "type": "ApexTrigger",
+      "numLinesCovered": 3,
+      "numLinesUncovered": 0,
+      "percentage": "100%",
+      "coveredLines": [
+        3,
+        4,
+        5
+      ],
+      "uncoveredLines": []
+    }
+  ]
+}

@@ -4,24 +4,26 @@ public class CarUpdateBatchSchedulerTests {
 
     @TestSetup
     static void makeData(){
-        List<Car__c> carsToAdd = new List<Car__c>();
-        Date carReview = date.newInstance(2020, 7, 13);
-        Date insuranceEnd = date.newInstance(2020, 8, 13);
+        List<Car__c> carsProbablyDead = TestDataFactory.createCars(5, 2005, date.newInstance(2020, 7, 13), date.newInstance(2020, 8, 13), 300000, 50000);
 
-        for(Integer i=0; i<5; i++){
-            carsToAdd.add(new Car__c(Name = 'car ' + i, Production_Year__c = 2005, Last_Car_Review_Date__c=carReview,
-            Insurance_Expiry_Date__c = insuranceEnd, Mileage__c = 300000, Mileage_When_Last_Timing_Replacement__c = 5000));
-        }
-        insert carsToAdd;
+        insert carsProbablyDead;
     }
 
     @isTest
     private static void testScheduler(){
+
+        List<AsyncApexJob> jobsBeforeSchedulerExecute = [select Id, ApexClassID, ApexClass.Name, Status, JobType from AsyncApexJob];
+        System.assertEquals(0, jobsBeforeSchedulerExecute.size());
+
         System.Test.startTest();
             System.schedule('TEST SCHEDULER', CRON_EXP, new CarUpdateBatchScheduler());
-            System.assertEquals(0, [SELECT COUNT() FROM Car__c WHERE Status__c = 'Probably dead']);
         System.Test.stopTest();
+        
+        List<AsyncApexJob> jobsAfterSchedulerExecute = [SELECT Id, ApexClassID, ApexClass.Name, Status, JobType FROM AsyncApexJob WHERE JobType = 'ScheduledApex'];
+        System.debug('aftre execute: ' + jobsAfterSchedulerExecute);
+        System.assertEquals(1, jobsAfterSchedulerExecute.size());    
 
-        System.assertEquals(5, [SELECT COUNT() FROM Car__c WHERE Status__c = 'Probably dead']);
+        List<AsyncApexJob> jobsApexBatch = [SELECT Id, ApexClassID, ApexClass.Name, Status, JobType FROM AsyncApexJob WHERE JobType = 'BatchApex'];
+        System.assertEquals(1, jobsApexBatch.size());
     }
 }

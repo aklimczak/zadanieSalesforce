@@ -1,0 +1,219 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 2,
+    "passing": 0,
+    "failing": 2,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Thu Mar 18 2021 11:38:25 AM",
+    "testExecutionTimeInMs": 203,
+    "testTotalTimeInMs": 203,
+    "commandTimeInMs": 1168,
+    "hostname": "https://resilient-impala-d41kwo-dev-ed.my.salesforce.com",
+    "orgId": "00D09000007SYyxEAG",
+    "username": "adam.klimczak95@resilient-impala-d41kwo.com",
+    "testRunId": "707090000095Ubj",
+    "userId": "00509000004GGuxAAG",
+    "totalLines": 17,
+    "coveredLines": 9,
+    "testRunCoverage": "53%",
+    "orgWideCoverage": "75%"
+  },
+  "tests": [
+    {
+      "id": "07M09000001DjODEA0",
+      "queueItemId": "70909000000HXivAAG",
+      "stackTrace": "Class.CarUpdateBatch.execute: line 12, column 1",
+      "message": "System.SObjectException: SObject row was retrieved via SOQL without querying the requested field: Car__c.Last_Car_Review_Date__c",
+      "asyncApexJobId": "707090000095UbjAAE",
+      "methodName": "shouldUpdateStatusToNeedRepair",
+      "outcome": "Fail",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p0900000CcW9TAAV",
+        "name": "CarUpdateBatchTests",
+        "namespacePrefix": null,
+        "fullName": "CarUpdateBatchTests"
+      },
+      "runTime": 125,
+      "testTimestamp": "2021-03-18T10:38:25.000+0000",
+      "fullName": "CarUpdateBatchTests.shouldUpdateStatusToNeedRepair",
+      "diagnostic": {
+        "exceptionMessage": "System.SObjectException: SObject row was retrieved via SOQL without querying the requested field: Car__c.Last_Car_Review_Date__c",
+        "exceptionStackTrace": "Class.CarUpdateBatch.execute: line 12, column 1",
+        "className": "CarUpdateBatch",
+        "compileProblem": "",
+        "lineNumber": 12,
+        "columnNumber": 1
+      },
+      "perClassCoverage": [
+        {
+          "apexClassOrTriggerName": "CarUpdateBatch",
+          "apexClassOrTriggerId": "01p0900000CcW99AAF",
+          "apexTestClassId": "01p0900000CcW9TAAV",
+          "apexTestMethodName": "shouldUpdateStatusToNeedRepair",
+          "numLinesCovered": 6,
+          "numLinesUncovered": 8,
+          "percentage": "43%",
+          "coverage": {
+            "coveredLines": [
+              3,
+              4,
+              8,
+              9,
+              11,
+              12
+            ],
+            "uncoveredLines": [
+              13,
+              14,
+              15,
+              17,
+              18,
+              20,
+              22,
+              26
+            ]
+          }
+        },
+        {
+          "apexClassOrTriggerName": "CarTrigger",
+          "apexClassOrTriggerId": "01q09000000DFzHAAW",
+          "apexTestClassId": "01p0900000CcW9TAAV",
+          "apexTestMethodName": "shouldUpdateStatusToNeedRepair",
+          "numLinesCovered": 3,
+          "numLinesUncovered": 0,
+          "percentage": "100%",
+          "coverage": {
+            "coveredLines": [
+              3,
+              4,
+              5
+            ],
+            "uncoveredLines": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "07M09000001DjOEEA0",
+      "queueItemId": "70909000000HXivAAG",
+      "stackTrace": "Class.CarUpdateBatch.execute: line 12, column 1",
+      "message": "System.SObjectException: SObject row was retrieved via SOQL without querying the requested field: Car__c.Last_Car_Review_Date__c",
+      "asyncApexJobId": "707090000095UbjAAE",
+      "methodName": "shouldUpdateStatusToNeedReview",
+      "outcome": "Fail",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p0900000CcW9TAAV",
+        "name": "CarUpdateBatchTests",
+        "namespacePrefix": null,
+        "fullName": "CarUpdateBatchTests"
+      },
+      "runTime": 78,
+      "testTimestamp": "2021-03-18T10:38:25.000+0000",
+      "fullName": "CarUpdateBatchTests.shouldUpdateStatusToNeedReview",
+      "diagnostic": {
+        "exceptionMessage": "System.SObjectException: SObject row was retrieved via SOQL without querying the requested field: Car__c.Last_Car_Review_Date__c",
+        "exceptionStackTrace": "Class.CarUpdateBatch.execute: line 12, column 1",
+        "className": "CarUpdateBatch",
+        "compileProblem": "",
+        "lineNumber": 12,
+        "columnNumber": 1
+      },
+      "perClassCoverage": [
+        {
+          "apexClassOrTriggerName": "CarUpdateBatch",
+          "apexClassOrTriggerId": "01p0900000CcW99AAF",
+          "apexTestClassId": "01p0900000CcW9TAAV",
+          "apexTestMethodName": "shouldUpdateStatusToNeedReview",
+          "numLinesCovered": 6,
+          "numLinesUncovered": 8,
+          "percentage": "43%",
+          "coverage": {
+            "coveredLines": [
+              3,
+              4,
+              8,
+              9,
+              11,
+              12
+            ],
+            "uncoveredLines": [
+              13,
+              14,
+              15,
+              17,
+              18,
+              20,
+              22,
+              26
+            ]
+          }
+        },
+        {
+          "apexClassOrTriggerName": "CarTrigger",
+          "apexClassOrTriggerId": "01q09000000DFzHAAW",
+          "apexTestClassId": "01p0900000CcW9TAAV",
+          "apexTestMethodName": "shouldUpdateStatusToNeedReview",
+          "numLinesCovered": 0,
+          "numLinesUncovered": 3,
+          "percentage": "0%",
+          "coverage": {
+            "coveredLines": [],
+            "uncoveredLines": [
+              3,
+              4,
+              5
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "codecoverage": [
+    {
+      "apexId": "01p0900000CcW99AAF",
+      "name": "CarUpdateBatch",
+      "type": "ApexClass",
+      "numLinesCovered": 6,
+      "numLinesUncovered": 8,
+      "percentage": "43%",
+      "coveredLines": [
+        3,
+        4,
+        8,
+        9,
+        11,
+        12
+      ],
+      "uncoveredLines": [
+        13,
+        14,
+        15,
+        17,
+        18,
+        20,
+        22,
+        26
+      ]
+    },
+    {
+      "apexId": "01q09000000DFzHAAW",
+      "name": "CarTrigger",
+      "type": "ApexTrigger",
+      "numLinesCovered": 3,
+      "numLinesUncovered": 0,
+      "percentage": "100%",
+      "coveredLines": [
+        3,
+        4,
+        5
+      ],
+      "uncoveredLines": []
+    }
+  ]
+}

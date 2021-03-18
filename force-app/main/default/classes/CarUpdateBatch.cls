@@ -7,22 +7,22 @@ public class CarUpdateBatch implements Database.Batchable<sObject> {
 
     public static void execute(Database.BatchableContext bc, List<Car__c> scope){
         List<Car__c> carsToUpdate = new List<Car__c>();
+        String doesNeedTimingReplacement_DEFINITELY_YES = 'DEFINITELY YES';
 
         for(Car__c car : scope){
             car.Days_Until_Next_Car_Review__c = System.today().daysBetween(car.Last_Car_Review_Date__c.addYears(1));
             car.Days_Until_Insurance_s_End__c = System.today().daysBetween(car.Insurance_Expiry_Date__c);
 
-            if(car.Days_Until_Insurance_s_End__c <= 0 && car.Does_Need_Timing_Replacement__c == 'ZDECYDOWANIE TAK'){
+            if(car.Days_Until_Insurance_s_End__c <= 0 && car.Does_Need_Timing_Replacement__c == doesNeedTimingReplacement_DEFINITELY_YES){
                 car.Status__c = 'Probably dead';
             }
-            else if(car.Does_Need_Timing_Replacement__c == 'ZDECYDOWANIE TAK'){
+            else if(car.Does_Need_Timing_Replacement__c == doesNeedTimingReplacement_DEFINITELY_YES){
                 car.Status__c = 'Need a repair';
             }
             else if(car.Days_Until_Insurance_s_End__c <= 0){
                 car.Status__c = 'Need a review';
             }
 
-            System.debug('yyyy ' + car.Status__c);
             carsToUpdate.add(car);
         }
         update carsToUpdate;

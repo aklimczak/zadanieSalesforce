@@ -1,0 +1,149 @@
+[
+  [
+    {
+      "apexClassOrTriggerName": "CarTrigger",
+      "apexClassOrTriggerId": "01q09000000DFzHAAW",
+      "apexTestClassId": "01p0900000CcW9TAAV",
+      "apexTestMethodName": "shouldUpdateStatusToNeedRepair",
+      "numLinesCovered": 3,
+      "numLinesUncovered": 0,
+      "percentage": "100%",
+      "coverage": {
+        "coveredLines": [
+          3,
+          4,
+          5
+        ],
+        "uncoveredLines": []
+      }
+    },
+    {
+      "apexClassOrTriggerName": "CarUpdateBatch",
+      "apexClassOrTriggerId": "01p0900000CcW99AAF",
+      "apexTestClassId": "01p0900000CcW9TAAV",
+      "apexTestMethodName": "shouldUpdateStatusToNeedRepair",
+      "numLinesCovered": 16,
+      "numLinesUncovered": 0,
+      "percentage": "100%",
+      "coverage": {
+        "coveredLines": [
+          3,
+          4,
+          8,
+          9,
+          11,
+          12,
+          13,
+          15,
+          16,
+          18,
+          19,
+          21,
+          22,
+          25,
+          27,
+          30
+        ],
+        "uncoveredLines": []
+      }
+    }
+  ],
+  [
+    {
+      "apexClassOrTriggerName": "CarUpdateBatch",
+      "apexClassOrTriggerId": "01p0900000CcW99AAF",
+      "apexTestClassId": "01p0900000CcW9TAAV",
+      "apexTestMethodName": "shouldUpdateStatusToNeedReview",
+      "numLinesCovered": 16,
+      "numLinesUncovered": 0,
+      "percentage": "100%",
+      "coverage": {
+        "coveredLines": [
+          3,
+          4,
+          8,
+          9,
+          11,
+          12,
+          13,
+          15,
+          16,
+          18,
+          19,
+          21,
+          22,
+          25,
+          27,
+          30
+        ],
+        "uncoveredLines": []
+      }
+    },
+    {
+      "apexClassOrTriggerName": "CarTrigger",
+      "apexClassOrTriggerId": "01q09000000DFzHAAW",
+      "apexTestClassId": "01p0900000CcW9TAAV",
+      "apexTestMethodName": "shouldUpdateStatusToNeedReview",
+      "numLinesCovered": 0,
+      "numLinesUncovered": 3,
+      "percentage": "0%",
+      "coverage": {
+        "coveredLines": [],
+        "uncoveredLines": [
+          3,
+          4,
+          5
+        ]
+      }
+    }
+  ],
+  [
+    {
+      "apexClassOrTriggerName": "CarUpdateBatch",
+      "apexClassOrTriggerId": "01p0900000CcW99AAF",
+      "apexTestClassId": "01p0900000CcW9TAAV",
+      "apexTestMethodName": "shouldUpdateStatusToProbablyDead",
+      "numLinesCovered": 16,
+      "numLinesUncovered": 0,
+      "percentage": "100%",
+      "coverage": {
+        "coveredLines": [
+          3,
+          4,
+          8,
+          9,
+          11,
+          12,
+          13,
+          15,
+          16,
+          18,
+          19,
+          21,
+          22,
+          25,
+          27,
+          30
+        ],
+        "uncoveredLines": []
+      }
+    },
+    {
+      "apexClassOrTriggerName": "CarTrigger",
+      "apexClassOrTriggerId": "01q09000000DFzHAAW",
+      "apexTestClassId": "01p0900000CcW9TAAV",
+      "apexTestMethodName": "shouldUpdateStatusToProbablyDead",
+      "numLinesCovered": 0,
+      "numLinesUncovered": 3,
+      "percentage": "0%",
+      "coverage": {
+        "coveredLines": [],
+        "uncoveredLines": [
+          3,
+          4,
+          5
+        ]
+      }
+    }
+  ]
+]

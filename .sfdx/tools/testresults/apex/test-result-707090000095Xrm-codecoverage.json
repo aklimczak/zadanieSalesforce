@@ -1,0 +1,21 @@
+[
+  [
+    {
+      "apexClassOrTriggerName": "CarTrigger",
+      "apexClassOrTriggerId": "01q09000000DFzHAAW",
+      "apexTestClassId": "01p0900000CcVjFAAV",
+      "apexTestMethodName": "shouldCalculateDaysUntilInsuranceExpiryDateAndCarReview",
+      "numLinesCovered": 3,
+      "numLinesUncovered": 0,
+      "percentage": "100%",
+      "coverage": {
+        "coveredLines": [
+          3,
+          4,
+          5
+        ],
+        "uncoveredLines": []
+      }
+    }
+  ]
+]

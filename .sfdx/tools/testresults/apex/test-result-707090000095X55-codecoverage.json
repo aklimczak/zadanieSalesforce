@@ -1,0 +1,52 @@
+[
+  [
+    {
+      "apexClassOrTriggerName": "CarUpdateBatch",
+      "apexClassOrTriggerId": "01p0900000CcW99AAF",
+      "apexTestClassId": "01p0900000CcW9TAAV",
+      "apexTestMethodName": "shouldUpdateStatusToProbablyDead",
+      "numLinesCovered": 17,
+      "numLinesUncovered": 0,
+      "percentage": "100%",
+      "coverage": {
+        "coveredLines": [
+          3,
+          4,
+          8,
+          9,
+          10,
+          12,
+          13,
+          14,
+          16,
+          17,
+          19,
+          20,
+          22,
+          23,
+          26,
+          28,
+          31
+        ],
+        "uncoveredLines": []
+      }
+    },
+    {
+      "apexClassOrTriggerName": "CarTrigger",
+      "apexClassOrTriggerId": "01q09000000DFzHAAW",
+      "apexTestClassId": "01p0900000CcW9TAAV",
+      "apexTestMethodName": "shouldUpdateStatusToProbablyDead",
+      "numLinesCovered": 3,
+      "numLinesUncovered": 0,
+      "percentage": "100%",
+      "coverage": {
+        "coveredLines": [
+          3,
+          4,
+          5
+        ],
+        "uncoveredLines": []
+      }
+    }
+  ]
+]

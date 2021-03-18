@@ -3,9 +3,9 @@
     <fullName>Days_Until_Next_Car_Review__c</fullName>
     <externalId>false</externalId>
     <label>Days Until Next Car Review</label>
-    <precision>12</precision>
+    <precision>10</precision>
     <required>false</required>
-    <scale>2</scale>
+    <scale>0</scale>
     <trackTrending>false</trackTrending>
     <type>Number</type>
     <unique>false</unique>
