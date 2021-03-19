@@ -59,5 +59,9 @@
         <members>Cars_UtilityBar</members>
         <name>FlexiPage</name>
     </types>
+    <types>
+        <members>Car__c</members>
+        <name>CustomTab</name>
+    </types>
     <version>51.0</version>
 </Package>
