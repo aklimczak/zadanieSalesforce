@@ -20,6 +20,7 @@ public class CarUpdateBatchSchedulerTests {
         System.Test.stopTest();
         
         List<AsyncApexJob> jobsAfterSchedulerExecute = [SELECT Id, ApexClassID, ApexClass.Name, Status, JobType FROM AsyncApexJob WHERE JobType = 'ScheduledApex'];
+        System.debug('aftre execute: ' + jobsAfterSchedulerExecute);
         System.assertEquals(1, jobsAfterSchedulerExecute.size());    
 
         List<AsyncApexJob> jobsApexBatch = [SELECT Id, ApexClassID, ApexClass.Name, Status, JobType FROM AsyncApexJob WHERE JobType = 'BatchApex'];

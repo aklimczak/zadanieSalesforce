@@ -19,7 +19,6 @@ public with sharing class CarTriggerTests {
         for(Database.SaveResult res : results){
             System.assert(res.isSuccess());
         }
-        
         System.assertEquals(10, [SELECT COUNT() FROM Car__c WHERE Days_Until_Next_Car_Review__c = :daysUntilNextCarReview AND Days_Until_Insurance_s_End__c = :daysUntilInsuraceEnd]);
     }
 }
