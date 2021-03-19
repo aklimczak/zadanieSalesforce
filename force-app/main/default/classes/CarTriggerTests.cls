@@ -9,7 +9,6 @@ public with sharing class CarTriggerTests {
 
         List<Car__c> carsToAdd = TestDataFactory.createCars(10, 2005, lastCarReviewDate, insuranceEndDate, 100000, 50000);
 
-        
         System.Test.startTest();
             List<Database.SaveResult> results = Database.insert(carsToAdd, false);
         System.Test.stopTest();
