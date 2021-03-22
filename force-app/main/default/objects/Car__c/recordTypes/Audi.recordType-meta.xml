@@ -2,6 +2,7 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Audi</fullName>
     <active>true</active>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <label>Audi</label>
     <picklistValues>
         <picklist>Condition_of_the_Car__c</picklist>

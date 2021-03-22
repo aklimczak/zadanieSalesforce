@@ -10,4 +10,21 @@ public class TestDataFactory {
         return carsToCreate;
 
     }
+
+    public static List<Repair__c> createRepairs(Integer numberOfRepairs, Id carId, String status, String reason, Integer cost){
+        List<Repair__c> repairsToCreate = new List<Repair__c>();
+
+        for(Integer i=0; i<numberOfRepairs; i++){
+            repairsToCreate.add(new Repair__c(Name='repairName ' + i, Car__c=carId, Status__c=status, Reason__c=reason, Cost__c=cost));
+        }
+        return repairsToCreate;
+    }
+
+    public static List<Repair__c> changeRepairsStatusToInProgress(List<Repair__c> repairsToUpdate){
+        for(Repair__c repair : repairsToUpdate){
+            repair.Status__c = 'In progress';
+        }
+        return repairsToUpdate;
+    }
+
 }
