@@ -7,6 +7,13 @@
         <members>CarUpdateBatchSchedulerTests</members>
         <members>CarUpdateBatchTests</members>
         <members>TestDataFactory</members>
+        <members>TriggerHandler</members>
+        <members>TriggerHandlerTests</members>
+        <members>RepairTriggerHandler</members>
+        <members>RepairTriggerHandlerTests</members>
+        <members>RepairTriggerHandler</members>
+        <members>RepairTriggerHandler</members>
+
         <name>ApexClass</name>
     </types>
     <types>
@@ -53,6 +60,8 @@
         <members>Car__c-Alfa Romeo Layout</members>
         <members>Car__c-Audi Layout</members>
         <members>Car__c-BMW Layout</members>
+        <members>Car_Trim__c-Car Trim Layout</members>
+        <members>Repair__c-Repair Layout</members>
         <name>Layout</name>
     </types>
     <types>
@@ -62,6 +71,10 @@
     <types>
         <members>Car__c</members>
         <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Car__c.New_Repair</members>
+        <name>QuickAction</name>
     </types>
     <version>51.0</version>
 </Package>
