@@ -155,8 +155,9 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Car</label>
     <nameField>
+        <displayFormat>CAR-{0000}</displayFormat>
         <label>Car Name</label>
-        <type>Text</type>
+        <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Cars</pluralLabel>
     <searchLayouts/>
