@@ -14,7 +14,7 @@ public with sharing class CarTriggerHandlerTests {
         
         Integer daysUntilNextCarReview = System.today().daysBetween(lastCarReviewDate.addYears(1));
         Integer daysUntilInsuraceEnd = System.today().daysBetween(insuranceEndDate);
-
+		//asd;
         System.assertEquals(10, [SELECT COUNT() FROM Car__c WHERE Days_Until_Next_Car_Review__c = :daysUntilNextCarReview AND Days_Until_Insurance_s_End__c = :daysUntilInsuraceEnd]);
     }
 }
